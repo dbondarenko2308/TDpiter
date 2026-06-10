@@ -1,0 +1,149 @@
+.about {
+  background: #f5f7fc;
+
+  &__inner {
+    padding: 128px 0;
+
+    @media only screen and (max-width: 991px) {
+      padding: 64px 0;
+    }
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    margin-bottom: 64px;
+
+    grid-gap: 28px;
+
+    @media only screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__sub {
+    color: #23305d;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    line-height: 123%;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    color: #59617b;
+    margin-bottom: 32px;
+    font-size: 18px;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    @media only screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &__container {
+
+    @media only screen and (max-width: 991px) {
+      padding-bottom: 35px;
+      margin-right: -16px;
+      padding-right: 16px;
+    }
+
+    .swiper-pagination {
+      bottom: 0;
+
+      &-bullet {
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+        background: #bdc4dc;
+
+        &-active {
+          width: 40px;
+          background: #26428b;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 991px) {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media only screen and (max-width: 991px) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    padding: 12px 36px;
+    border-left: 1px solid #bdc4dc;
+    border-right: 1px solid #bdc4dc;
+
+
+    @media only screen and (max-width: 991px) {
+      max-width: 300px;
+
+
+      border-right: 0;
+
+
+      &:last-child {
+        border-right: 1px solid #bdc4dc;
+      }
+    }
+
+    p {
+      font-size: 52px;
+      font-weight: 600;
+      margin-bottom: 8px;
+
+      @media only screen and (max-width: 1300px) {
+        font-size: 36px;
+      }
+
+      @media only screen and (max-width: 991px) {
+        font-size: 28px;
+      }
+    }
+
+    span {
+      color: rgba(35, 48, 93, 1);
+
+      @media only screen and (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

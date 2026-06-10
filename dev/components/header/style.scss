@@ -1,0 +1,243 @@
+@use '../../style/scss/variables.scss' as *;
+
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 12;
+  color: #FEFEFE;
+  padding: 30px 0;
+
+  @media only screen and (max-width: 991px) {
+    padding: 16px 0;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1500px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+    @media only screen and (max-width: 991px) {
+      height: 36px;
+      margin-right: 0;
+    }
+  }
+
+  &__catalog {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 10px;
+    border-radius: 10px;
+    background: #4873d2;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__content--number {
+    a {
+      display: block;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      color: #ffc36d;
+      margin-bottom: 2px;
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    @media only screen and (max-width: 1500px) {
+      flex-grow: 10;
+      width: 100%;
+      order: 1;
+    }
+
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    @media only screen and (max-width: 991px) {
+      position: fixed;
+      display: none;
+      align-items: flex-start;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      background: #fff;
+      height: 100%;
+      min-height: 100vh;
+      width: 100%;
+      padding: 16px;
+      z-index: 1011;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      width: 100%;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &__head {
+      display: flex;
+      align-items: center;
+    }
+
+    &__phone {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(38, 66, 139, 1);
+      border-radius: 4px;
+      margin-right: 16px;
+    }
+
+    &__close {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(38, 66, 139, 1);
+      border-radius: 4px;
+    }
+
+    &__info {
+      padding-top: 24px;
+      width: 100%;
+      flex-grow: 10;
+
+      .header__menu {
+        display: block;
+
+        .menu {
+          &__list {
+            flex-direction: column;
+            color: rgba(38, 66, 139, 1);
+            align-items: flex-start;
+          }
+
+          &__item {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          &__item--it {
+            width: 100%;
+            justify-content: space-between;
+
+            svg {
+              path {
+                stroke: rgba(38, 66, 139, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__number {
+      color: rgba(255, 195, 109, 1);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    &__desc {
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: rgba(89, 97, 123, 1);
+      display: block;
+    }
+
+    &__foot {
+      width: 100%;
+
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: center;
+  }
+
+  &__mob {
+    display: none;
+
+    &--phone {
+      display: flex;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      justify-content: center;
+      background: #fff;
+      margin-right: 16px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.breadcrumb {
+  margin-top: 40px;
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    row-gap: 7px;
+    color: #6a768d;
+    font-size: 20px;
+
+    @media only screen and (max-width: 991px) {
+      flex-wrap: wrap;
+      font-size: 16px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+  
+    span {
+      color: #1c1e24;
+      font-size: 20px;
+
+      @media only screen and (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-thumb {
+      background: none;
+    }
+    & > *:not(:last-child) {
+      margin-right: 10px;
+      &::after {
+        content: '';
+        display: inline-block;
+        background: url('/images/arrow-bread.svg') no-repeat;
+        width: 9px;
+        height: 16px;
+        margin-left: 10px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+	@media only screen and (max-width: 991px) {
+		flex-direction: column-reverse;
+		gap: 20px;
+	}
+
+
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		@media only screen and (max-width: 991px) {
+			justify-content: space-between;
+			width: 100%;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		width: 26px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&.current {
+			background: #BC4242;
+			color: #fff;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		transition: 300ms;
+
+		@media only screen and (max-width: 991px) {
+			width: 44px;
+			height: 25px;
+		}
+
+
+		&:hover {
+			svg {
+				path {
+					opacity: 0.7;
+				}
+			}
+		}
+
+		&.hide {
+			pointer-events: none;
+			svg {
+				path {
+					fill: #D6D6D6;
+				}
+			}
+		}
+
+		svg {
+			path {
+				transition: 300ms;
+				fill: #BC4242;
+			}
+		}
+	}
+
+	.btn-white {
+		border: 1px solid #333;
+
+		@media only screen and (max-width: 991px) {
+			width: 100%;
+			max-width: 100%;
+		}
+
+
+		&:hover {
+			border: 1px solid transparent;
+		}
+	}
+}

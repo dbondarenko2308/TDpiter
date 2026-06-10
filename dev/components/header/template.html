@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
+
+    <link rel="stylesheet" href="libraries/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="libraries/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/all-style.css" />
+    <title>@@title</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <a href="#" class="header__logo">
+              <img src="images/logo.svg" alt="" />
+            </a>
+
+            <div class="header__menu">
+              @@include('../elements/menu/template.html',{})
+            </div>
+
+            <div class="header__content">
+              <div class="header__content--number">
+                <a href="#">+7 812 967 75 85 </a>
+
+                <span>Пн-Пт 9:00 - 18:00</span>
+              </div>
+            </div>
+
+            <a href="#callback" data-fancybox class="header__btn btn btn-white">Заказать звонок</a>
+
+            <div class="header__mob">
+              <a href="#" class="header__mob--phone">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9.66952 4.6896C9.38604 4.03152 8.69965 3.60001 7.93636 3.60001H5.36852C4.39185 3.60001 3.6001 4.33524 3.6001 5.24215C3.6001 12.9509 10.3302 19.2 18.6319 19.2C19.6085 19.2 20.4001 18.4649 20.4001 17.558L20.4 15.1735C20.4 14.4647 19.9352 13.8274 19.2265 13.5642L16.7668 12.6505C16.1302 12.4141 15.4054 12.5206 14.8787 12.9282L14.243 13.42C13.5013 13.9939 12.4107 13.948 11.7281 13.3141L9.9387 11.6527C9.25603 11.0187 9.20684 10.006 9.8249 9.31732L10.3545 8.72719C10.7934 8.2381 10.9081 7.56496 10.6535 6.97383L9.66952 4.6896Z"
+                    stroke="#26428B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="header__burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M1.84619 6.46155H22.6154M1.84619 12.2769H22.6154M1.84619 18.0923H22.6154"
+                    stroke="#26428B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div class="header-mobile">
+              <div class="header-mobile__top">
+                <a href="#" class="header-mobile__logo">
+                  <img src="images/logo-blue.svg" alt="" />
+                </a>
+
+                <div class="header-mobile__head">
+                  <a href="#" class="header-mobile__phone">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.66952 4.6896C9.38604 4.03152 8.69965 3.60001 7.93636 3.60001H5.36852C4.39185 3.60001 3.6001 4.33524 3.6001 5.24215C3.6001 12.9509 10.3302 19.2 18.6319 19.2C19.6085 19.2 20.4001 18.4649 20.4001 17.558L20.4 15.1735C20.4 14.4647 19.9352 13.8274 19.2265 13.5642L16.7668 12.6505C16.1302 12.4141 15.4054 12.5206 14.8787 12.9282L14.243 13.42C13.5013 13.9939 12.4107 13.948 11.7281 13.3141L9.9387 11.6527C9.25603 11.0187 9.20684 10.006 9.8249 9.31732L10.3545 8.72719C10.7934 8.2381 10.9081 7.56496 10.6535 6.97383L9.66952 4.6896Z"
+                        stroke="#FEFEFE"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+
+                  <div class="header-mobile__close">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18 18L6 6M18 6L6 18"
+                        stroke="#FEFEFE"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="header-mobile__info">
+                 @@include('../elements/menu/template.html',{})
+
+
+                </div>
+                <div class="header-mobile__foot">
+                  <a href="#" class="header-mobile__number">+7 812 967 75 85 </a>
+                  <span class="header-mobile__desc">Пн-Пт 9:00 - 18:00</span>
+                  <a href="#" class="header-mobile__btn btn btn-blue">Заказать звонок</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">

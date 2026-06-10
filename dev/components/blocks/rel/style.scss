@@ -1,0 +1,143 @@
+.rel {
+  margin: 128px 0;
+
+  @media only screen and (max-width: 991px) {
+    margin: 64px 0;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__sub {
+    font-size: 42px;
+    color: #23305d;
+    font-weight: 600;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 24px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    height: auto;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #dde1ed;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 991px) {
+      max-width: 300px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10;
+  }
+
+  &__container {
+    .swiper-pagination {
+      display: none;
+    }
+
+    @media only screen and (max-width: 991px) {
+      margin-right: -16px;
+      padding-right: 16px;
+      padding-bottom: 32px;
+
+      .swiper-pagination {
+        bottom: 0;
+        display: block;
+
+        &-bullet {
+          width: 8px;
+          height: 8px;
+          opacity: 1;
+          background: #bdc4dc;
+
+          &-active {
+            width: 40px;
+            background: #26428b;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  &__prev,
+  &__next {
+    border-radius: 2px;
+    background: #e1e6f4;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 300ms;
+    cursor: pointer;
+
+    &:hover {
+      background: #bdc4dc;
+    }
+  }
+
+  &__desc {
+    flex-grow: 10;
+    &--text {
+      margin-bottom: 16px;
+
+      p {
+        color: #bdc4dc;
+
+        @media only screen and (max-width: 991px) {
+          font-size: 14px;
+        }
+      }
+
+      span {
+        display: block;
+        font-size: 18px;
+        color: #59617b;
+
+        @media only screen and (max-width: 991px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .work__head {
+    @media only screen and (max-width: 991px) {
+      min-height: auto;
+    }
+  }
+}

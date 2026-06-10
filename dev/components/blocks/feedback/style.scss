@@ -1,0 +1,71 @@
+.feedback {
+  background: url('/images/bg-feed.png') 50% 50% no-repeat;
+  background-size: cover;
+
+  &__inner {
+    padding: 128px 0;
+    color: #FEFEFE;
+
+
+    @media only screen and (max-width: 991px) {
+      padding: 64px 0;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+
+    @media only screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    color: #F5F7FC;
+    margin-bottom: 8px;
+
+    &::before {
+      background: #FFC36D;
+    }
+  }
+
+
+  &__sub {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 28px;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+  
+
+
+  &__form {
+    padding: 28px;
+    border-radius: 8px;
+    background: rgba(254, 254, 254, 0.4);
+    backdrop-filter: blur(6px);
+
+    @media only screen and (max-width: 991px) {
+      padding: 16px;
+    }
+
+    .field {
+      margin-bottom: 12px;
+    }
+
+    .checkbox {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}
