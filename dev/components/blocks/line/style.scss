@@ -33,9 +33,9 @@
   }
 
   &__container {
-    padding-bottom: 32px;
-
+    
     @media only screen and (max-width: 991px) {
+      padding-bottom: 32px;
       margin-right: -16px;
       padding-right: 16px;
     }
@@ -92,6 +92,10 @@
   &__desc {
     color: #59617b;
     font-size: 18px;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 16px;
+    }
   }
 
   &__item {

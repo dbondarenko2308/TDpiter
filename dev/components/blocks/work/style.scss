@@ -13,7 +13,7 @@
     font-size: 42px;
     font-weight: 600;
     color: #23305d;
-    margin-bottom: 54px;
+    margin-bottom: 64px;
 
     @media only screen and (max-width: 991px) {
       font-size: 24px;
@@ -77,6 +77,7 @@
     @media only screen and (max-width: 991px) {
       font-size: 22px;
       min-height: 90px;
+      margin-bottom: 12px;
     }
 
     &:before {

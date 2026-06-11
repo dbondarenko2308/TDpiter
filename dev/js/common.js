@@ -76,8 +76,15 @@ $(document).ready(function() {
 			init: false,
 			instance: null,
 			selector: '.line__container',
+
 			options: {
 				slidesPerView: 'auto',
+				speed: 2000,
+
+				autoplay: {
+					delay: 2000,
+					disableOnInteraction: false
+				},
 				spaceBetween: 16,
 				pagination: {
 					el: '.swiper-pagination',
@@ -92,8 +99,15 @@ $(document).ready(function() {
 			init: false,
 			instance: null,
 			selector: '.about__container',
+
 			options: {
 				slidesPerView: 'auto',
+				speed: 2000,
+
+				autoplay: {
+					delay: 2000,
+					disableOnInteraction: false
+				},
 				pagination: {
 					el: '.swiper-pagination',
 					type: 'bullets',
@@ -107,8 +121,15 @@ $(document).ready(function() {
 			init: false,
 			instance: null,
 			selector: '.work__container',
+
 			options: {
 				slidesPerView: 'auto',
+				speed: 2000,
+
+				autoplay: {
+					delay: 2000,
+					disableOnInteraction: false
+				},
 				spaceBetween: 16,
 				pagination: {
 					el: '.swiper-pagination',

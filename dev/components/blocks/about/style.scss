@@ -25,6 +25,10 @@
 
   &__title {
     margin-bottom: 16px;
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 8px;
+    }
   }
 
   &__sub {
@@ -128,6 +132,7 @@
       font-size: 52px;
       font-weight: 600;
       margin-bottom: 8px;
+      color: #23305D;
 
       @media only screen and (max-width: 1300px) {
         font-size: 36px;
